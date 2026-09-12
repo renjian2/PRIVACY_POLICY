@@ -1,0 +1,60 @@
+# Privacy Policy for HzForge
+
+**Last Updated: September 12, 2026**
+
+This Privacy Policy describes how **HzForge** ("we", "our", or "the App") collects, uses, and protects your information when you use our Android mobile application.
+
+---
+
+## 1. Overview & Core Privacy Principle
+HzForge is a local, on-device gaming companion and display utility designed to monitor hardware telemetry and manage screen refresh rates. 
+
+**We do not collect, store, sell, or transmit any Personally Identifiable Information (PII) such as your name, email address, phone number, contacts, location, photos, messages, or files.**
+
+---
+
+## 2. Information Handled On-Device
+All core performance metrics are processed strictly locally in your device's memory and are never sent to external servers:
+- **Display Refresh Rates**: The app reads and applies display refresh rates (120Hz, 90Hz, 60Hz) per your configuration.
+- **Hardware Telemetry**: Real-time FPS, frame times, battery wattage, milliAmps, and CPU/GPU temperatures are measured locally for in-game HUD display and session recording.
+- **Benchmark CSV Logs**: If you record a gaming session, the telemetry is stored locally on your device storage in the app's private files directory. You retain complete ownership and control to export, share, or delete these files at any time.
+
+---
+
+## 3. Permissions Used & Rationale
+HzForge requests only the permissions necessary to provide its core gaming utility features:
+- **`SYSTEM_ALERT_WINDOW` ("Display over other apps")**: Required to draw the non-intrusive floating FPS and telemetry overlay HUD while playing games.
+- **`PACKAGE_USAGE_STATS` ("Usage Access")**: Used strictly on-device to detect when you launch a game to trigger your configured refresh rate profile and thermal governor.
+- **`WRITE_SECURE_SETTINGS`**: Used on-device to change the display refresh rate without requiring root access.
+- **`FOREGROUND_SERVICE` & `FOREGROUND_SERVICE_SPECIAL_USE`**: Keeps the telemetry HUD active while you are inside a full-screen game.
+- **`POST_NOTIFICATIONS`**: Displays persistent notification status showing active FPS and thermal state while the monitoring service runs.
+
+---
+
+## 4. Crash Diagnostics & Analytics
+The app integrates standard crash reporting through **Google Firebase Crashlytics** to diagnose bugs and improve app stability.
+- Data collected is strictly anonymous and limited to device hardware model, Android OS version, and stack traces of unexpected application crashes.
+- No personal user data or game content is included in crash logs.
+- All diagnostic communications are encrypted in transit using standard HTTPS protocols.
+
+---
+
+## 5. Third-Party Sharing
+We do **not** sell, trade, rent, or share any user data with third-party advertising companies, brokers, or data analytics platforms.
+
+---
+
+## 6. Children's Privacy
+HzForge does not knowingly collect or solicit any personal information from children under the age of 13.
+
+---
+
+## 7. Changes to This Policy
+We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.
+
+---
+
+## 8. Contact Us
+If you have any questions or concerns regarding this Privacy Policy or the security of the application, please contact us at:
+- **Project**: HzForge
+- **Repository**: https://github.com/renjian2/FramePulse
